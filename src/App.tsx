@@ -11,11 +11,10 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(
     !!auth?.currentUser
   );
-  console.log(isAuthenticated);
 
   return (
     <Layout>
-      <Router />
+      <Router isAuthenticated={isAuthenticated} />
     </Layout>
   );
 }
