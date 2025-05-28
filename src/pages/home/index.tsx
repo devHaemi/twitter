@@ -40,8 +40,7 @@ export default function HomePage() {
             id: doc.id,
           };
         });
-
-        console.log(dataObj);
+        setPosts(dataObj as PostProps[]);
       });
     }
   }, []);
